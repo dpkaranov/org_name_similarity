@@ -59,11 +59,17 @@ print(namesim.check_similarity('Saudi Aramco', 'Rosneft'))
 ### Структура проекта:
 
 > org_name_similarity
+
 > > data
+
 > > images
+
 > > metrics
+
 > > models
+
 > > notebooks
+
 > > > 1 Создание мультиязычной базы данных.ipynb
 
 > > > 2 Загрузка моделей трансформеров.ipynb
