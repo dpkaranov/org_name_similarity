@@ -15,11 +15,8 @@ git clone https://github.com/dpkaranov/org_name_similarity.git
 ```bash
 cd ./org_name_similarity
 ```
-3. Скачайте модель и распакуйте её в папке ./org_name_similarity/models
+3. Скачайте [модель](https://drive.google.com/u/0/uc?id=1hbftMcPJoL9QGukfBnr3aFb31rqJBAIB&export=download) и распакуйте её в папке ./org_name_similarity/models
 
-```bash
-wget https://drive.google.com/file/d/1hbftMcPJoL9QGukfBnr3aFb31rqJBAIB/view?usp=sharing
-```
 4. Положите текстовый файл в папку ./org_name_similarity/texts
 
 5. Запустите скрипт
