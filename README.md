@@ -7,29 +7,29 @@
 
 1. Скачайте проект
 
-```
+```bash
 git clone https://github.com/dpkaranov/org_name_similarity.git
 ```
 2. Перейдите в директорию проекта
 
-```
+```bash
 cd ./org_name_similarity
 ```
 3. Скачайте модель и распакуйте её в папке ./org_name_similarity/models
 
-```
+```bash
 wget https://drive.google.com/file/d/1hbftMcPJoL9QGukfBnr3aFb31rqJBAIB/view?usp=sharing
 ```
 4. Положите текстовый файл в папку ./org_name_similarity/texts
 
 5. Запустите скрипт
 
-```
+```bash
 python name_sim.py <путь/до/файла>
 ```
 или
 
-```
+```bash
 python3 name_sim.py <путь/до/файла>
 ```
 
@@ -37,7 +37,7 @@ python3 name_sim.py <путь/до/файла>
 
 Если есть необходимость определить схожесть каких-либо названий через терминал, можно использовать следующую команду:
 
-```
+```bash
 python3 name_sim.py --check <первое название> <второе название>
 ```
 
@@ -48,7 +48,7 @@ python3 name_sim.py --check <первое название> <второе наз
 Убедитесь, что папка с модулем находится в директории Вашего проекта.
 В скрипте импортируйте класс.
 
-```
+```python
 from org_name_similarity import NameSim
 
 namesim = NameSim()
