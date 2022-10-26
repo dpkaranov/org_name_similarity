@@ -89,7 +89,7 @@ print(namesim.check_similarity('Saudi Aramco', 'Rosneft'))
 
 Для решения задачи определения схожести названий проведено дообучение (fine-tuning) модели-трансформер с помощью фреймворка sentence-transformes. Трансформеры буквально "захватили" NLP, демонстрируя высокие показатели по сравнению с RNN, LSTM и др. технологиями машинного обучения. Их привлекательность для обработки естественного языка заключается в применении механизма внутреннего внимания, устанавливающего свзязи между отдельными словами.
 
-![alt text](https://github.com/dpkaranov/org_name_similarity/images/blob/master/attention.png?raw=true)
+![alt text](https://github.com/dpkaranov/org_name_similarity/blob/master/images/attention.png?raw=true)
 
 В качестве альтернативы рассматривались tensorflow, torch, spacy, но в итоге выбор был сделан в пользу sentence-transformes. Преимущества ST: высокопроизводительные модели, автоматизированная настройка гиперпараметров и простота использования. Помимо этого для поиска имен в тексте (задача NER) используется Spacy.
 
