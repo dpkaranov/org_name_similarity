@@ -46,9 +46,9 @@ python3 name_sim.py --check <первое название> <второе наз
 В скрипте импортируйте класс.
 
 ```python
-from org_name_similarity.name_sim import NameSim
+from org_name_similarity.name_sim import NamSim
 
-namesim = NameSim()
+namesim = NamSim()
 
 print(namesim.check_similarity('Saudi Aramco', 'Rosneft'))
 ```
