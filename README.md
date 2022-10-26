@@ -7,31 +7,39 @@
 
 1. Скачайте проект
 
+```
 git clone https://github.com/dpkaranov/org_name_similarity.git
-
+```
 2. Перейдите в директорию проекта
 
+```
 cd ./org_name_similarity
-
+```
 3. Скачайте модель и распакуйте её в папке ./org_name_similarity/models
 
+```
 wget https://drive.google.com/file/d/1hbftMcPJoL9QGukfBnr3aFb31rqJBAIB/view?usp=sharing
-
+```
 4. Положите текстовый файл в папку ./org_name_similarity/texts
 
 5. Запустите скрипт
 
+```
 python name_sim.py <путь/до/файла>
-
+```
 или
 
+```
 python3 name_sim.py <путь/до/файла>
+```
 
 ### Возможен и другой вариант использования:
 
 Если есть необходимость определить схожесть каких-либо названий через терминал, можно использовать следующую команду:
 
+```
 python3 name_sim.py --check <первое название> <второе название>
+```
 
 В этом случае программа возвратит булево значение True / False
 
@@ -40,11 +48,13 @@ python3 name_sim.py --check <первое название> <второе наз
 Убедитесь, что папка с модулем находится в директории Вашего проекта.
 В скрипте импортируйте класс.
 
+```
 from org_name_similarity import NameSim
 
 namesim = NameSim()
 
 print(namesim.check_similarity('Saudi Aramco', 'Rosneft'))
+```
 
 ### Структура проекта:
 
