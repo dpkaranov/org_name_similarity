@@ -59,9 +59,17 @@ print(namesim.check_similarity('Saudi Aramco', 'Rosneft'))
 
 > > data
 
+> > > data.csv
+
 > > images
 
 > > metrics
+
+> > > comp_with_128.csv
+
+> > > first_metrics.csv
+
+> > > hard_comp_with_128.csv
 
 > > models
 
