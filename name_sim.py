@@ -17,7 +17,7 @@ class NamSim:
         try:
             self.model_st = SentenceTransformer('./models/1.0_db-multilingual-cased-v2')
         except Exception:
-            print('Check the models folder. Perhaps it is empty.')
+            print('Check the model folder. Perhaps it is empty.')
 
     def check_similarity(self, name_1:str, name_2:str):
         '''
@@ -49,7 +49,7 @@ class NamSim:
                     if not add_val:
                         last_tokens.append(token.text)
                         token_dic[token.text] = []
-                        token_dic[token.text].append((token.start_char, token.end_char))
+                        token_dic[token.text].append([token.start_char, token.end_char])
                 add_val = False
         return token_dic
 
@@ -69,3 +69,17 @@ class NamSim:
             new_file.close()
         else:
             print("Path to file doesn't exsist")
+
+if __name__ == '__main__':
+    namsim = NamSim()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--check', type=str, nargs=2, required=False)
+    parser.add_argument('--path', type=str, nargs=1, required=False)
+    args = parser.parse_args()
+    if args.check != None:
+        res = namsim.check_similarity(args.check[0], args.check[1])
+        print(res)
+    elif args.path != None:
+        namsim.parse_text(args.path[0])
+    else:
+        namsim.parse_text('./texts/1.txt')
