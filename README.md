@@ -68,13 +68,13 @@ print(namsim.check_similarity('Saudi Aramco', 'Rosneft'))
       └── hard_comp_with_128.csv
 ├── models
 ├── notebooks
-      └── 1 Создание мультиязычной базы данных.ipynb
-      └── 2 Загрузка моделей трансформеров.ipynb
-      └── 3 Обучение трансформеров на собственном датасете.ipynb
-      └── 4 Сравнение обученного трансформера с необученными моделями.ipynb
-      └── 5 Подготовка нового датасета.ipynb
-      └── 6 Обучение новой модели трансформера на новом датасете.ipynb
-      └── 7 Создание модели с аутпутом 128 и сравнение моделей на тестовых данных.ipynb
+      └── 1 created_multilang_dataset.ipynb
+      └── 2 upload_transformers_for_exps.ipynb
+      └── 3 train_transformer.ipynb
+      └── 4 compare_models.ipynb
+      └── 5 prepare_new_dataset.ipynb
+      └── 6 train_new_model.ipynb
+      └── 7 train_model_128.ipynb
 ├── texts
 ├── out
 ```
