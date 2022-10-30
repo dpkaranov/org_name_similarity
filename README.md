@@ -17,7 +17,7 @@ cd ./org_name_similarity
 ```
 3. Скачайте [модель](https://drive.google.com/u/0/uc?id=1hbftMcPJoL9QGukfBnr3aFb31rqJBAIB&export=download) и распакуйте её в папке ./org_name_similarity/models
 
-4. Положите текстовый файл в папку ./org_name_similarity/texts и создайте папку out в корневой директории
+4. Положите текстовый файл в папку ./org_name_similarity/texts
 
 5. Запустите скрипт
 
