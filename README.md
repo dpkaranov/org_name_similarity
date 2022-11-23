@@ -5,14 +5,29 @@
 
 ### Инструкция:
 
+### Способ №1. Установка через pip
+
+1. Создайте виртуальную среду, активируйте её и установите модуль через pip
+
+```bash
+python3 -m venv venv
+
+source ./venv/bin/activate
+
+python3 -m pip install -i https://test.pypi.org/simple/ org-name-similarity==0.0.1
+```
+
+Описание проекта - https://test.pypi.org/project/org-name-similarity/0.0.1/
+
+### Способ №2. Установка через git
+
 1. Создайте виртуальную среду, активируйте её и скачайте проект
 
 ```bash
 python3 -m venv venv
 
 source ./venv/bin/activate
-```
-```bash
+
 git clone https://github.com/dpkaranov/org_name_similarity.git
 ```
 2. Перейдите в директорию проекта и установите зависимости
