@@ -5,15 +5,28 @@
 
 ### Инструкция:
 
-1. Скачайте проект
+1. Создайте виртуальную среду, активируйте её и скачайте проект
 
+```bash
+python3 -m venv venv
+
+source ./venv/bin/activate
+```
 ```bash
 git clone https://github.com/dpkaranov/org_name_similarity.git
 ```
-2. Перейдите в директорию проекта
+2. Перейдите в директорию проекта и установите зависимости
 
 ```bash
 cd ./org_name_similarity
+```
+для пользователей
+```bash
+pip3 install -r requirements.txt
+```
+для разработчиков
+```bash
+pip3 install -r dev_requirements.txt
 ```
 3. Скачайте [модель](https://drive.google.com/u/0/uc?id=1hbftMcPJoL9QGukfBnr3aFb31rqJBAIB&export=download) и распакуйте её в папке ./org_name_similarity/models
 
