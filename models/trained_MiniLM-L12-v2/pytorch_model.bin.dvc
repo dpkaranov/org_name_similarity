@@ -1,0 +1,4 @@
+outs:
+- md5: 0f15480a24475eff44971698c56aaf4f
+  size: 470684465
+  path: pytorch_model.bin
